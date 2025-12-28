@@ -457,6 +457,6 @@ print(f"AN: {result['an']}, DRG: {result['drg']}, RW: {result['rw']}")
 
 ## ดูเพิ่มเติม
 
-- [คู่มือ Python Library](../guide/python-library.md)
-- [คู่มือ REST API](../guide/api.md)
-- [คู่มือ CLI](../guide/cli.md)
+- [Python API Reference](../reference/grouper.md)
+- [REST API Reference](../reference/api.md)
+- [การติดตั้งและตั้งค่า](../getting-started/installation.md)
