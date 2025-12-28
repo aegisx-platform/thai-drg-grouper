@@ -65,7 +65,55 @@ List available commands:
 thai-drg-grouper --help
 ```
 
+## Configuration
+
+### Environment Variables
+
+The API server can be configured using environment variables. Create a `.env` file in your working directory:
+
+```bash
+# Copy the example file
+cp .env.example .env
+```
+
+Available configuration options:
+
+#### CORS Configuration
+
+Configure allowed origins for API requests (comma-separated):
+
+```bash
+# Development (default)
+CORS_ORIGINS=http://localhost:4200,http://localhost:3000
+
+# Production
+CORS_ORIGINS=https://your-app.example.com,https://another-app.example.com
+```
+
+Default origins:
+- `http://localhost:4200` - Angular development server
+- `http://localhost:3000` - React/Vite development server
+
+#### Server Configuration
+
+```bash
+# Server host and port (optional)
+HOST=0.0.0.0
+PORT=8000
+```
+
+### Example .env File
+
+```bash
+# CORS Configuration
+CORS_ORIGINS=http://localhost:4200,http://localhost:3000
+
+# Server Configuration
+# HOST=0.0.0.0
+# PORT=8000
+```
+
 ## Next Steps
 
-- [Quick Start Guide](quickstart.md) - Start grouping cases
-- [Configuration](configuration.md) - Set up DRG versions
+- Start grouping cases with the Python library or CLI
+- Set up DRG versions using `thai-drg-grouper download`

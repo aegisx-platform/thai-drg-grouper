@@ -133,6 +133,71 @@ data/versions/
     └── ...
 ```
 
+## การตั้งค่า (Configuration)
+
+### ตัวแปร Environment Variables
+
+สามารถตั้งค่า API server ผ่าน environment variables โดยสร้างไฟล์ `.env` ในโฟลเดอร์ที่รันโปรแกรม:
+
+```bash
+# คัดลอกไฟล์ตัวอย่าง
+cp .env.example .env
+```
+
+### ตัวเลือกการตั้งค่า
+
+#### การตั้งค่า CORS
+
+กำหนด origins ที่อนุญาตให้เรียก API (คั่นด้วย comma):
+
+```bash
+# สำหรับ Development (ค่า default)
+CORS_ORIGINS=http://localhost:4200,http://localhost:3000
+
+# สำหรับ Production
+CORS_ORIGINS=https://your-app.example.com,https://another-app.example.com
+```
+
+**Origins เริ่มต้น:**
+- `http://localhost:4200` - Angular development server
+- `http://localhost:3000` - React/Vite development server
+
+#### การตั้งค่า Server
+
+```bash
+# กำหนด host และ port (ถ้าต้องการ)
+HOST=0.0.0.0
+PORT=8000
+```
+
+### ตัวอย่างไฟล์ .env
+
+```bash
+# CORS Configuration
+CORS_ORIGINS=http://localhost:4200,http://localhost:3000
+
+# Server Configuration
+# HOST=0.0.0.0
+# PORT=8000
+```
+
+### การใช้งานกับ Docker
+
+เมื่อใช้ Docker สามารถส่ง environment variables ผ่าน `-e` flag:
+
+```bash
+docker run -p 8000:8000 \
+  -e CORS_ORIGINS="https://your-app.com" \
+  ghcr.io/aegisx-platform/thai-drg-grouper:latest
+```
+
+หรือใช้ไฟล์ `.env`:
+
+```bash
+docker run -p 8000:8000 --env-file .env \
+  ghcr.io/aegisx-platform/thai-drg-grouper:latest
+```
+
 ## การแก้ไขปัญหาที่พบบ่อย
 
 ### ปัญหา: ImportError - No module named 'dbfread'
