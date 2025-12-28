@@ -6,6 +6,8 @@
 
 Multi-version Thai DRG (Diagnosis Related Group) Grouper for Linux, Mac, and Windows.
 
+> 🇹🇭 **[เอกสารภาษาไทย (Thai Documentation)](th/index.md)** - Complete documentation in Thai with detailed examples
+
 ## Features
 
 - ✅ **Cross-platform** - Works on Linux, Mac, Windows

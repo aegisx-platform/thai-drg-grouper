@@ -44,24 +44,10 @@ nav:
   - Home: index.md
   - Getting Started:
       - Installation: getting-started/installation.md
-      - Quick Start: getting-started/quickstart.md
-      - Configuration: getting-started/configuration.md
-  - User Guide:
-      - Python Library: guide/python-library.md
-      - CLI Usage: guide/cli.md
-      - REST API: guide/api.md
-      - Docker: guide/docker.md
-      - Version Management: guide/version-management.md
-  - API Reference:
-      - Grouper: reference/grouper.md
-      - Manager: reference/manager.md
-      - Types: reference/types.md
-      - CLI: reference/cli.md
-      - API: reference/api.md
-  - Advanced:
-      - Grouping Algorithm: advanced/algorithm.md
-      - DBF File Format: advanced/dbf-format.md
-      - Adding New Versions: advanced/new-versions.md
+  - Thai Documentation (ภาษาไทย):
+      - หน้าหลัก: th/index.md
+      - การติดตั้ง: th/getting-started/installation.md
+      - ตัวอย่างการใช้งาน: th/examples/basic.md
   - Contributing: contributing.md
   - Changelog: changelog.md
 
