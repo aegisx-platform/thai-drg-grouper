@@ -71,6 +71,9 @@ thai-drg-grouper serve --port 8000
 
 # Or with uvicorn
 uvicorn thai_drg_grouper.api:app --port 8000
+
+# Or with Docker
+docker run -p 8000:8000 ghcr.io/aegisx-platform/thai-drg-grouper:latest
 ```
 
 Visit [http://localhost:8000/docs](http://localhost:8000/docs) for interactive API documentation.

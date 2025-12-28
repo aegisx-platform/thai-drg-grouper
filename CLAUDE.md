@@ -107,10 +107,14 @@ uvicorn thai_drg_grouper.api:app --reload --port 8000
 ### Docker
 
 ```bash
-# Build Docker image
-docker build -t thai-drg-grouper:latest .
+# Pull from GitHub Container Registry
+docker pull ghcr.io/aegisx-platform/thai-drg-grouper:latest
 
 # Run container
+docker run -p 8000:8000 ghcr.io/aegisx-platform/thai-drg-grouper:latest
+
+# Or build locally
+docker build -t thai-drg-grouper:latest .
 docker run -p 8000:8000 thai-drg-grouper:latest
 
 # Docker Compose

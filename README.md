@@ -147,6 +147,15 @@ data/versions/
 
 ## 🐳 Docker
 
+### Using Pre-built Image from GitHub Container Registry
+
+```bash
+docker pull ghcr.io/aegisx-platform/thai-drg-grouper:latest
+docker run -p 8000:8000 ghcr.io/aegisx-platform/thai-drg-grouper:latest
+```
+
+### Building Your Own Image
+
 ```dockerfile
 FROM python:3.11-slim
 
