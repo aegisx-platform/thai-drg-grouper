@@ -10,7 +10,7 @@ License: MIT
 
 Usage:
     from thai_drg_grouper import ThaiDRGGrouperManager
-    
+
     manager = ThaiDRGGrouperManager('./data/versions')
     result = manager.group_latest(pdx='S82201D', los=5)
     print(f"DRG: {result.drg}, RW: {result.rw}")
