@@ -241,5 +241,5 @@ pip install thai-drg-grouper[api]
 ## ขั้นตอนถัดไป
 
 - 💻 [ตัวอย่างการใช้งาน](../examples/basic.md)
-- 🌐 [REST API Reference](../reference/api.md)
-- 📚 [Python API Reference](../reference/grouper.md)
+- 🌐 [REST API Reference](../../reference/api.md)
+- 📚 [Python API Reference](../../reference/grouper.md)
