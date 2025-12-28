@@ -80,12 +80,14 @@ docker run -p 8000:8000 ghcr.io/aegisx-platform/thai-drg-grouper:latest
 
 Visit [http://localhost:8000/docs](http://localhost:8000/docs) for interactive API documentation.
 
-## Documentation Structure
+## Documentation
 
-- **[Getting Started](getting-started/installation.md)** - Installation and basic setup
-- **[User Guide](guide/python-library.md)** - Detailed usage instructions
-- **[API Reference](reference/grouper.md)** - Complete API documentation
-- **[Advanced](advanced/algorithm.md)** - In-depth technical details
+- **[Getting Started](getting-started/installation.md)** - Installation and configuration
+- **[Thai Documentation](th/index.md)** - Complete documentation in Thai
+- **[Thai Examples](th/examples/basic.md)** - 10 detailed usage examples in Thai
+- **[API Documentation](http://localhost:8000/docs)** - Interactive API docs (run server first)
+- **[Contributing](contributing.md)** - How to contribute
+- **[Changelog](changelog.md)** - Version history
 
 ## Support This Project
 
