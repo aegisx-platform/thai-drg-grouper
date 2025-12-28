@@ -2,6 +2,7 @@
 Thai DRG Grouper - FastAPI
 """
 
+import os
 from typing import List, Optional
 
 from .manager import ThaiDRGGrouperManager
@@ -24,10 +25,17 @@ def create_api(manager: ThaiDRGGrouperManager):
         redoc_url="/redoc",
     )
 
-    # Add CORS middleware to allow requests from MedCode Assist frontend
+    # Add CORS middleware to allow requests from frontend applications
+    # Configure via CORS_ORIGINS environment variable (comma-separated list)
+    # Default: localhost:4200 (Angular), localhost:3000 (React/Vite)
+    cors_origins = os.getenv(
+        "CORS_ORIGINS",
+        "http://localhost:4200,http://localhost:3000"
+    ).split(",")
+
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://localhost:4200", "http://localhost:3000"],
+        allow_origins=[origin.strip() for origin in cors_origins],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
