@@ -11,6 +11,7 @@ def create_api(manager: ThaiDRGGrouperManager):
     """Create FastAPI app"""
     try:
         from fastapi import FastAPI, HTTPException, Query
+        from fastapi.middleware.cors import CORSMiddleware
         from pydantic import BaseModel
     except ImportError:
         raise ImportError("Please install: pip install fastapi")
@@ -21,6 +22,15 @@ def create_api(manager: ThaiDRGGrouperManager):
         version="2.0.0",
         docs_url="/docs",
         redoc_url="/redoc",
+    )
+
+    # Add CORS middleware to allow requests from MedCode Assist frontend
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["http://localhost:4200", "http://localhost:3000"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
     )
 
     class GroupRequest(BaseModel):

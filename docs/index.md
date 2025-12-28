@@ -85,6 +85,14 @@ Visit [http://localhost:8000/docs](http://localhost:8000/docs) for interactive A
 - **[API Reference](reference/grouper.md)** - Complete API documentation
 - **[Advanced](advanced/algorithm.md)** - In-depth technical details
 
+## Support This Project
+
+If you find this project helpful, consider supporting its development:
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/sathit)
+
+Your support helps maintain and improve this project! ☕
+
 ## Disclaimer
 
 This is an implementation based on DBF files from Thai CaseMix Centre, **not the official grouper**. Always validate results against official TGrp software before production use.

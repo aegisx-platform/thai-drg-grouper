@@ -214,6 +214,14 @@ thai-drg-grouper list
 - [Thai CaseMix Centre (สรท.)](https://www.tcmc.or.th)
 - [Thai DRG Downloads](https://www.tcmc.or.th/tdrg)
 
+## 💖 Support This Project
+
+If you find this project helpful, consider buying me a coffee! ☕
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/sathit)
+
+Your support helps maintain and improve this project!
+
 ## 📄 License
 
 MIT License - See [LICENSE](LICENSE) for details.
