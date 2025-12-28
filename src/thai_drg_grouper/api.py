@@ -3,7 +3,6 @@ Thai DRG Grouper - FastAPI
 """
 
 from typing import List, Optional
-from dataclasses import asdict
 
 from .manager import ThaiDRGGrouperManager
 
