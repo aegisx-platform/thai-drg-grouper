@@ -83,9 +83,11 @@ Visit [http://localhost:8000/docs](http://localhost:8000/docs) for interactive A
 ## Documentation
 
 - **[Getting Started](getting-started/installation.md)** - Installation and configuration
+- **[REST API Reference](reference/api.md)** - Complete HTTP API documentation
+- **[Python API Reference](reference/grouper.md)** - Python library documentation
+- **[Interactive API Docs](http://localhost:8000/docs)** - Swagger UI (run server first)
 - **[Thai Documentation](th/index.md)** - Complete documentation in Thai
 - **[Thai Examples](th/examples/basic.md)** - 10 detailed usage examples in Thai
-- **[API Documentation](http://localhost:8000/docs)** - Interactive API docs (run server first)
 - **[Contributing](contributing.md)** - How to contribute
 - **[Changelog](changelog.md)** - Version history
 

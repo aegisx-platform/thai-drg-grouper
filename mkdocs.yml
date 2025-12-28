@@ -44,6 +44,9 @@ nav:
   - Home: index.md
   - Getting Started:
       - Installation: getting-started/installation.md
+  - API Reference:
+      - REST API: reference/api.md
+      - Python API: reference/grouper.md
   - Thai Documentation (ภาษาไทย):
       - หน้าหลัก: th/index.md
       - การติดตั้ง: th/getting-started/installation.md

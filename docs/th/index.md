@@ -123,7 +123,9 @@ print(f"PCL (Patient Complexity): {result.pcl}")
 
 - **[การติดตั้ง](getting-started/installation.md)** - วิธีติดตั้งและตั้งค่าเบื้องต้น
 - **[ตัวอย่างการใช้งาน](examples/basic.md)** - 10 ตัวอย่างการใช้งานโดยละเอียด
-- **[API Documentation](http://localhost:8000/docs)** - เอกสาร API แบบ interactive (ต้องรัน server ก่อน)
+- **[REST API Reference](../reference/api.md)** - เอกสาร HTTP API ฉบับสมบูรณ์
+- **[Python API Reference](../reference/grouper.md)** - เอกสาร Python library
+- **[Interactive API Docs](http://localhost:8000/docs)** - Swagger UI (ต้องรัน server ก่อน)
 - **[Contributing](../contributing.md)** - วิธีการมีส่วนร่วมพัฒนา
 - **[Changelog](../changelog.md)** - ประวัติการอัพเดท
 
