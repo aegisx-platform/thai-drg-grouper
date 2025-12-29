@@ -6,6 +6,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
+## 💖 Support This Project
+
+If you find this project helpful, consider supporting its development:
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/sathit)
+
+Your support helps maintain and improve this project! ☕
+
 ## 🎯 Thai DRG Grouper คืออะไร?
 
 **Thai DRG Grouper** เป็น Python package สำหรับจัดกลุ่ม DRG (Diagnosis Related Group) ของผู้ป่วยในระบบสุขภาพไทย โดยรองรับการใช้งานหลายรูปแบบ:
@@ -140,14 +148,6 @@ print(f"PCL (Patient Complexity): {result.pcl}")
 1. **ไม่ใช่โปรแกรม Official** - โปรแกรมนี้ implement จาก DBF files ของ TCMC
 2. **ต้อง Validate** - ควรตรวจสอบผลลัพธ์กับโปรแกรม TGrp Official ก่อนใช้งานจริง
 3. **ใช้งานทดสอบและวิจัย** - เหมาะสำหรับการเรียนรู้ วิจัย และพัฒนาระบบ
-
-## 💖 สนับสนุนโปรเจกต์นี้
-
-หากคุณเห็นว่าโปรเจกต์นี้มีประโยชน์ เชิญชวนสนับสนุนการพัฒนาด้วยการซื้อกาแฟให้ผู้พัฒนา! ☕
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-ซื้อกาแฟให้-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/sathit)
-
-การสนับสนุนของคุณช่วยให้โปรเจกต์นี้ได้รับการดูแลและพัฒนาต่อไป! 🙏
 
 ## 📞 ติดต่อและสนับสนุน
 

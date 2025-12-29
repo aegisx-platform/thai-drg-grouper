@@ -8,6 +8,14 @@ Multi-version Thai DRG (Diagnosis Related Group) Grouper for Linux, Mac, and Win
 
 > 🇹🇭 **[เอกสารภาษาไทย (Thai Documentation)](th/index.md)** - Complete documentation in Thai with detailed examples
 
+## Support This Project
+
+If you find this project helpful, consider supporting its development:
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/sathit)
+
+Your support helps maintain and improve this project! ☕
+
 ## Features
 
 - ✅ **Cross-platform** - Works on Linux, Mac, Windows
@@ -90,14 +98,6 @@ Visit [http://localhost:8000/docs](http://localhost:8000/docs) for interactive A
 - **[Thai Examples](th/examples/basic.md)** - 10 detailed usage examples in Thai
 - **[Contributing](contributing.md)** - How to contribute
 - **[Changelog](changelog.md)** - Version history
-
-## Support This Project
-
-If you find this project helpful, consider supporting its development:
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/sathit)
-
-Your support helps maintain and improve this project! ☕
 
 ## Disclaimer
 
