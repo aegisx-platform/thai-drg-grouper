@@ -2,38 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://aegisx.github.io/thai-drg-grouper/</loc>
-         <lastmod>2025-12-28</lastmod>
+         <lastmod>2025-12-29</lastmod>
     </url>
     <url>
          <loc>https://aegisx.github.io/thai-drg-grouper/changelog/</loc>
-         <lastmod>2025-12-28</lastmod>
+         <lastmod>2025-12-29</lastmod>
     </url>
     <url>
          <loc>https://aegisx.github.io/thai-drg-grouper/contributing/</loc>
-         <lastmod>2025-12-28</lastmod>
+         <lastmod>2025-12-29</lastmod>
     </url>
     <url>
          <loc>https://aegisx.github.io/thai-drg-grouper/getting-started/installation/</loc>
-         <lastmod>2025-12-28</lastmod>
+         <lastmod>2025-12-29</lastmod>
     </url>
     <url>
          <loc>https://aegisx.github.io/thai-drg-grouper/reference/api/</loc>
-         <lastmod>2025-12-28</lastmod>
+         <lastmod>2025-12-29</lastmod>
     </url>
     <url>
          <loc>https://aegisx.github.io/thai-drg-grouper/reference/grouper/</loc>
-         <lastmod>2025-12-28</lastmod>
+         <lastmod>2025-12-29</lastmod>
     </url>
     <url>
          <loc>https://aegisx.github.io/thai-drg-grouper/th/</loc>
-         <lastmod>2025-12-28</lastmod>
+         <lastmod>2025-12-29</lastmod>
+    </url>
+    <url>
+         <loc>https://aegisx.github.io/thai-drg-grouper/th/changelog/</loc>
+         <lastmod>2025-12-29</lastmod>
+    </url>
+    <url>
+         <loc>https://aegisx.github.io/thai-drg-grouper/th/contributing/</loc>
+         <lastmod>2025-12-29</lastmod>
     </url>
     <url>
          <loc>https://aegisx.github.io/thai-drg-grouper/th/examples/basic/</loc>
-         <lastmod>2025-12-28</lastmod>
+         <lastmod>2025-12-29</lastmod>
     </url>
     <url>
          <loc>https://aegisx.github.io/thai-drg-grouper/th/getting-started/installation/</loc>
-         <lastmod>2025-12-28</lastmod>
+         <lastmod>2025-12-29</lastmod>
+    </url>
+    <url>
+         <loc>https://aegisx.github.io/thai-drg-grouper/th/reference/api/</loc>
+         <lastmod>2025-12-29</lastmod>
+    </url>
+    <url>
+         <loc>https://aegisx.github.io/thai-drg-grouper/th/reference/grouper/</loc>
+         <lastmod>2025-12-29</lastmod>
     </url>
 </urlset>
