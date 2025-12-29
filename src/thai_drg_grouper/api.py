@@ -94,23 +94,8 @@ def create_api(manager: ThaiDRGGrouperManager):
         except ValueError as e:
             raise HTTPException(status_code=400, detail=str(e))
 
-    @app.post("/group/{version}")
-    def group_version(version: str, request: GroupRequest):
-        """Group using specific version"""
-        try:
-            result = manager.group(
-                version,
-                pdx=request.pdx,
-                sdx=request.sdx,
-                procedures=request.procedures,
-                age=request.age,
-                sex=request.sex,
-                los=request.los,
-            )
-            return result.to_dict()
-        except ValueError as e:
-            raise HTTPException(status_code=404, detail=str(e))
-
+    # NOTE: Specific routes must come BEFORE parameterized routes
+    # to avoid /group/{version} catching /group/compare and /group/batch
     @app.post("/group/compare")
     def group_compare(request: GroupRequest):
         """Compare across all versions"""
@@ -145,6 +130,23 @@ def create_api(manager: ThaiDRGGrouperManager):
             )
             results.append(result.to_dict())
         return {"version": v, "results": results, "count": len(results)}
+
+    @app.post("/group/{version}")
+    def group_version(version: str, request: GroupRequest):
+        """Group using specific version"""
+        try:
+            result = manager.group(
+                version,
+                pdx=request.pdx,
+                sdx=request.sdx,
+                procedures=request.procedures,
+                age=request.age,
+                sex=request.sex,
+                los=request.los,
+            )
+            return result.to_dict()
+        except ValueError as e:
+            raise HTTPException(status_code=404, detail=str(e))
 
     @app.get("/drg/{drg_code}")
     def get_drg(drg_code: str, version: Optional[str] = None):

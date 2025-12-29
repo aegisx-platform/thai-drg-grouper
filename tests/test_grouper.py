@@ -40,7 +40,7 @@ class TestGrouper:
 
     def test_group_pneumonia(self, grouper):
         """Test pneumonia case"""
-        result = grouper.group(pdx="J189", sdx=["E119"], los=7)
+        result = grouper.group(pdx="J189", sdx=["E119"], age=65, sex="M", los=7)
 
         assert result.is_valid
         assert result.mdc == "04"
@@ -48,7 +48,7 @@ class TestGrouper:
 
     def test_invalid_pdx(self, grouper):
         """Test invalid PDx"""
-        result = grouper.group(pdx="INVALID123")
+        result = grouper.group(pdx="INVALID123", age=30, sex="M", los=5)
 
         assert not result.is_valid
         assert result.drg == "26509"
@@ -56,7 +56,7 @@ class TestGrouper:
 
     def test_daycase(self, grouper):
         """Test day case (LOS=0)"""
-        result = grouper.group(pdx="J189", los=0)
+        result = grouper.group(pdx="J189", age=30, sex="M", los=0)
 
         assert result.los_status == "daycase"
         assert result.adjrw == result.rw0d
@@ -86,14 +86,14 @@ class TestManager:
 
     def test_group_latest(self, manager):
         """Test grouping with latest version"""
-        result = manager.group_latest(pdx="J189", los=5)
+        result = manager.group_latest(pdx="J189", age=30, sex="M", los=5)
         assert result.is_valid
 
     def test_group_specific_version(self, manager):
         """Test grouping with specific version"""
         versions = manager.list_versions()
         if versions:
-            result = manager.group(versions[0].version, pdx="J189", los=5)
+            result = manager.group(versions[0].version, pdx="J189", age=30, sex="M", los=5)
             assert result.is_valid
 
     def test_invalid_version(self, manager):
