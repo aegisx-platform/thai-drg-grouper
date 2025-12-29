@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "thai-drg-grouper"
-version = "2.1.0"
+version = "2.2.0"
 description = "Thai DRG Grouper - Multi-version support for Linux/Mac/Windows"
 readme = "README.md"
 license = "MIT"
