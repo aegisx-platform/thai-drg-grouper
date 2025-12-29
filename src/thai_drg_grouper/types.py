@@ -4,7 +4,7 @@ Thai DRG Grouper - Type Definitions
 
 import json
 from dataclasses import asdict, dataclass, field
-from typing import List
+from typing import List, Optional
 
 
 @dataclass
@@ -32,8 +32,8 @@ class GrouperResult:
     pdx: str
     sdx: List[str]
     procedures: List[str]
-    age: int
-    sex: str
+    age: Optional[int]
+    sex: Optional[str]
     los: int
     mdc: str
     mdc_name: str

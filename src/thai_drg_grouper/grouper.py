@@ -232,8 +232,8 @@ class ThaiDRGGrouper:
         pdx: str,
         sdx: List[str] = None,
         procedures: List[str] = None,
-        age: int = 30,
-        sex: str = "M",
+        age: Optional[int] = None,
+        sex: Optional[str] = None,
         los: int = 1,
         discharge_status: str = "normal",
     ) -> GrouperResult:
@@ -241,6 +241,44 @@ class ThaiDRGGrouper:
         sdx = sdx or []
         procedures = procedures or []
         errors, warnings = [], []
+
+        # Validate Age (Error Code 6) - must be checked first
+        if age is None or age < 0 or age > 124:
+            error_msg = "No age" if age is None else f"Invalid age: {age}"
+            errors.append(error_msg)
+            return GrouperResult(
+                version=self.version,
+                pdx=pdx,
+                sdx=sdx,
+                procedures=procedures,
+                age=age,
+                sex=sex,
+                los=los,
+                mdc="26",
+                mdc_name="Ungroupable",
+                dc="2653",
+                drg="26539",
+                drg_name="Age error",
+                rw=0,
+                rw0d=0,
+                adjrw=0,
+                wtlos=0,
+                ot=0,
+                pcl=0,
+                cc_list=[],
+                mcc_list=[],
+                has_or_procedure=False,
+                is_surgical=False,
+                los_status="normal",
+                is_valid=False,
+                errors=errors,
+                warnings=warnings,
+                grouped_at=datetime.now().isoformat(),
+            )
+
+        # Validate Sex (Warning Code 32)
+        if sex is None or sex not in ["M", "F", "1", "2"]:
+            warnings.append(f"Missing or invalid sex: {sex}")
 
         pdx_info = self._get_icd10_info(pdx)
         if not pdx_info:
@@ -257,7 +295,7 @@ class ThaiDRGGrouper:
                 mdc_name="Ungroupable",
                 dc="2650",
                 drg="26509",
-                drg_name="Ungroupable",
+                drg_name="Invalid principal diagnosis",
                 rw=0,
                 rw0d=0,
                 adjrw=0,

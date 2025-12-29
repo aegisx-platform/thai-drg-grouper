@@ -44,8 +44,8 @@ def main():
     group_parser.add_argument("--pdx", required=True, help="Principal diagnosis")
     group_parser.add_argument("--sdx", help="Secondary diagnoses (comma-separated)")
     group_parser.add_argument("--proc", help="Procedures (comma-separated)")
-    group_parser.add_argument("--age", type=int, default=30, help="Patient age")
-    group_parser.add_argument("--sex", default="M", help="Patient sex (M/F)")
+    group_parser.add_argument("--age", type=int, help="Patient age (required)")
+    group_parser.add_argument("--sex", help="Patient sex (M/F)")
     group_parser.add_argument("--los", type=int, default=1, help="Length of stay")
     group_parser.add_argument("--version", "-v", help="DRG version to use")
     group_parser.add_argument("--json", action="store_true", help="Output as JSON")
@@ -56,6 +56,8 @@ def main():
     cmp_parser.add_argument("--pdx", required=True, help="Principal diagnosis")
     cmp_parser.add_argument("--sdx", help="Secondary diagnoses")
     cmp_parser.add_argument("--proc", help="Procedures")
+    cmp_parser.add_argument("--age", type=int, help="Patient age")
+    cmp_parser.add_argument("--sex", help="Patient sex (M/F)")
     cmp_parser.add_argument("--los", type=int, default=1, help="Length of stay")
     cmp_parser.add_argument("--path", "-p", default="./data/versions", help="Versions path")
 
@@ -167,7 +169,7 @@ def main():
         procedures = args.proc.split(",") if args.proc else []
 
         results = manager.group_all_versions(
-            pdx=args.pdx, sdx=sdx, procedures=procedures, los=args.los
+            pdx=args.pdx, sdx=sdx, procedures=procedures, age=args.age, sex=args.sex, los=args.los
         )
 
         print("\n📊 Version Comparison")

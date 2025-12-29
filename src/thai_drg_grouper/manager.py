@@ -133,8 +133,8 @@ class ThaiDRGGrouperManager:
         pdx: str,
         sdx: List[str] = None,
         procedures: List[str] = None,
-        age: int = 30,
-        sex: str = "M",
+        age: Optional[int] = None,
+        sex: Optional[str] = None,
         los: int = 1,
         discharge_status: str = "normal",
     ) -> GrouperResult:
@@ -151,8 +151,8 @@ class ThaiDRGGrouperManager:
         pdx: str,
         sdx: List[str] = None,
         procedures: List[str] = None,
-        age: int = 30,
-        sex: str = "M",
+        age: Optional[int] = None,
+        sex: Optional[str] = None,
         los: int = 1,
     ) -> GrouperResult:
         """Group using default version"""
@@ -173,8 +173,8 @@ class ThaiDRGGrouperManager:
         pdx: str,
         sdx: List[str] = None,
         procedures: List[str] = None,
-        age: int = 30,
-        sex: str = "M",
+        age: Optional[int] = None,
+        sex: Optional[str] = None,
         los: int = 1,
     ) -> Dict[str, GrouperResult]:
         """Group using all versions for comparison"""
