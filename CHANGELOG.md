@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0] - 2024-12-29
+
+### Added
+- **Comprehensive Test Suite**: Added 75 tests covering core functionality with 57% code coverage
+  - Grouper core logic tests
+  - Manager multi-version tests
+  - API endpoint tests
+  - CLI command tests
+  - Input validation tests
+
+### Changed
+- **Documentation Synchronization**: Synced English and Thai documentation for consistency
+  - Updated Thai translation to match English docs
+  - Fixed cross-references between language versions
+
+### Fixed
+- **Age and Sex Validation**: Enforced proper validation per Thai DRG standard
+  - Added mandatory validation for age and sex parameters
+  - Aligned validation rules with official Thai DRG specifications
+
 ## [2.1.0] - 2024-12-29
 
 ### Added
@@ -82,6 +102,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Single version support
 - Simple command-line interface
 
+[2.2.0]: https://github.com/aegisx-platform/thai-drg-grouper/releases/tag/v2.2.0
 [2.1.0]: https://github.com/aegisx-platform/thai-drg-grouper/releases/tag/v2.1.0
 [2.0.0]: https://github.com/aegisx-platform/thai-drg-grouper/releases/tag/v2.0.0
 [1.0.0]: https://github.com/aegisx-platform/thai-drg-grouper/releases/tag/v1.0.0
